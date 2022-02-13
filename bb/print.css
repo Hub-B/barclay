@@ -1,0 +1,28 @@
+body {
+	color: #000000;
+}
+#header,
+#headerDivider,
+#menu,
+#printLink,
+#core-unmask-link,
+div.footer {
+	display: none;
+}
+#customerBanner,
+h1,
+td h1,
+h2,
+h3 {
+	background: none;
+	border: 0;
+	padding: 15px 0 0 0;
+}
+table.ledger,
+div.dataTables_wrapper {
+	border: 0;
+}
+table.ledger thead th,
+table.ledgerScrollable thead th {
+	border: 0;
+}

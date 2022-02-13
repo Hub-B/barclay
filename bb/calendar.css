@@ -1,0 +1,91 @@
+.calendarIcon {
+	vertical-align: middle;
+}
+.calendarButton {
+	margin-left: 10px;
+	margin-left: 1rem;
+}
+#calendarDialog {
+	background-color: #FFF;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 300000; /* Needs to be set this high to coexist with SmartGWT widgets */
+	width: 320px;
+}
+#calendarDialog td {
+	font-size: 11px;
+}
+#calendarDialog td.button,
+#calendarDialog td.buttonHover {
+	background: #FFF;
+	border: 1px solid #b2b2b5;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	color: #4c4c4c;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 10px 0;
+	text-align: center;
+}
+table.calendarHeader {
+	border: 1px solid #b2b2b5;
+	border-bottom: 0;
+	border-collapse: separate;
+	color: #4c4c4c;
+	padding: 10px 5px;
+	font-weight: bold;
+	text-align: center;
+	
+	background-color: #EAEBEB;
+	background-image: -webkit-linear-gradient(top, #FFF, #CCC); /* For Chrome and Safari */
+	background-image: linear-gradient(to bottom, #FFF, #CCC); /* Standard syntax; must be last */
+}
+table.calendarBody {
+	background-color: #FFF;
+	border: 1px solid #b2b2b5;
+	border-top: 0;
+	width: 100%;
+}
+.calendarDOWHeader {
+	color: #333;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 4px 2px;
+	text-align: center;
+	width: 22px;
+}
+.weekDay,
+.weekendDay,
+.weekDaySelected,
+.weekendDaySelected,
+.weekDayHover,
+.weekendDayHover {
+	border: 2px solid #FFF;
+	cursor: pointer;
+	padding: 4px 2px;
+	text-align: center;
+	vertical-align: top;
+}
+.weekendDay,
+.weekendDaySelected,
+.weekendDayHover {
+	background-color: #EEE;
+	border-color: #EEE;
+}
+.weekDaySelected,
+.weekendDaySelected {
+	font-weight: bold;
+}
+.weekDayHover,
+.weekendDayHover {
+	border-color: #71b5fe !important;
+}
+
+@media screen and (max-width: 660px) {
+	#calendarDialog {
+		width: 96%;
+		left: 0;
+	}
+}

@@ -1,0 +1,185 @@
+html {
+  font-size: 62.5%;
+}
+.standalone a:after {
+  background: url(images/links/chevron_secondary.png) no-repeat right top;
+}
+a.standalone {
+  padding-left: 1px;
+  padding-right: 18px;
+  text-decoration: none;
+}
+.access,
+.accessprefix {
+  font-size: 1px;
+  font-size: 0.1rem;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  width: 0.1rem;
+  z-index: -1;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #00395d;
+  font-family: "Expert Sans Light", "Trebuchet MS", Arial, Verdana, sans-serif;
+  font-weight: lighter;
+  padding-bottom: 0;
+  display: block;
+}
+.h2,
+h2 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  line-height: 1.1667;
+  letter-spacing: -1px;
+}
+.h4,
+h4 {
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.1428;
+  letter-spacing: 0;
+  margin: 1.4285em 0 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 1em 0;
+  padding: 0;
+}
+.loginControl {
+  border: 1px solid #eeeeee;
+  min-height: 180px;
+  padding: 15px 15px 10px 15px;
+  color: #666;
+  float: left;
+}
+#container {
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+#container h2 {
+  margin-top: 0px;
+  margin-bottom: 38px;
+}
+div .h4 {
+  margin: 0px;
+}
+#userNameDiv,
+#userNameDiv .field {
+  margin-top: 25px;
+}
+#userNameDiv .field label {
+  text-transform: none;
+}
+label #userDisplay {
+  text-transform: none;
+}
+#passwordDiv,
+#passwordDiv .field {
+  margin-bottom: 0px;
+}
+#rememberMe,
+#rememberMe .field {
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+#loginBtn,
+#loginBtn .field {
+  margin-bottom: 0px;
+}
+.loginForm {
+  float: left;
+}
+.radio label {
+  width: 100%;
+}
+#radioList {
+  margin-top: 40px;
+  margin-top: 4rem;
+}
+#radioList .field {
+  margin: 0px;
+  margin: 0rem;
+}
+label .radio {
+  margin: 0px;
+}
+input[type="submit"].whiteBtn {
+  background-color: #fff;
+  color: #0074a6;
+  border: 1px solid #0074a6;
+}
+input[type="submit"].whiteBtn:hover {
+  color: #00395d;
+  border: 1px solid #00395d;
+}
+.yesNoToggle input[type=radio] {
+  visibility: hidden;
+  position: absolute;
+}
+.yesNoToggle input[type=radio] + label {
+  display: inline-block;
+  border-radius: 5px;
+  border-radius: .5rem;
+  padding-left: 0px;
+  padding: 5px 20px !important;
+  margin: 0px;
+  margin-right: 18px;
+  font-size: 18px;
+  clear: none;
+  color: #0074a6;
+}
+.yesNoToggle input[type=radio]:not(:checked) + label {
+  color: #0074a6;
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+}
+.yesNoToggle input[type=radio]:not(:checked) + label:hover {
+  border-color: #0074a6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.yesNoToggle input[type=radio]:checked + label {
+  border-color: #0074a6;
+  color: 0074a6;
+  background: #fff;
+}
+.yesNoToggle input[type=radio]:checked + label {
+  cursor: pointer;
+}
+#resetPassword {
+  display: none;
+  visibility: hidden;
+}
+#userDisplay {
+  text-transform: none;
+  font-size: 16px;
+}
+@media screen and (max-width: 959px) {
+  .loginForm {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .loginControl {
+    width: 586px;
+    width: 58.6rem;
+  }
+}
+

@@ -1,0 +1,158 @@
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+		
+	.reveal-modal-bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1004;
+  display: none;
+  left: 0; }
+
+.reveal-modal, dialog {
+  visibility: hidden;
+
+  position: absolute;
+  z-index: 10000000000;
+  width: 90%;
+  top: 50% !important;
+  border-radius: 3px;
+  left: 5%;
+  background-color: white;
+  border:2px solid #0074a6; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding:10px;
+   }
+   .modalTitle{
+	
+	padding: 1%;
+	border-bottom: 1px solid #CCC;
+}
+  @media only screen and (max-width: 660px) {
+    .reveal-modal, dialog {
+     top: 30%;  } }
+  .reveal-modal .column, dialog .column, .reveal-modal .columns, dialog .columns {
+    min-width: 0; }
+  .reveal-modal > :first-child, dialog > :first-child {
+    margin-top: 0; }
+  .reveal-modal > :last-child, dialog > :last-child {
+    margin-bottom: 0; }
+  @media only screen and (min-width: 661px) {
+    .reveal-modal, dialog {
+      width: 70%;
+      max-width: 48em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 661px) {
+    .reveal-modal, dialog {
+      top: 30%; } }
+  .reveal-modal.radius, dialog.radius {
+    border-radius: 3px; }
+  .reveal-modal.round, dialog.round {
+    border-radius: 1000px; }
+  .reveal-modal.collapse, dialog.collapse {
+    padding: 0; }
+  @media only screen and (min-width: 661px) {
+    .reveal-modal.tiny, dialog.tiny {
+      width: 30%;
+      max-width: 48em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 661px) {
+    .reveal-modal.small, dialog.small {
+      width: 40%;
+      max-width: 48em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 661px) {
+    .reveal-modal.medium, dialog.medium {
+      width: 60%;
+      max-width: 48em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 661px) {
+    .reveal-modal.large, dialog.large {
+      width: 70%;
+      max-width: 48em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  @media only screen and (min-width: 661px) {
+    .reveal-modal.xlarge, dialog.xlarge {
+      width: 95%;
+      max-width: 48em;
+      left: 0;
+      right: 0;
+      margin: 0 auto; } }
+  .reveal-modal.full, dialog.full {
+    top: 0;
+    left: 0;
+    height: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    margin-left: 0 !important; }
+    @media only screen and (min-width: 661px) {
+      .reveal-modal.full, dialog.full {
+        width: 100vw;
+        max-width: 48em;
+        left: 0;
+        right: 0;
+        margin: 0 auto; } }
+  .reveal-modal .close-reveal-modal, dialog .close-reveal-modal {
+    font-size: 2.5rem;
+    line-height: 0.5;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    padding: .5rem;
+    color: #aaaaaa;
+    font-weight: bold;
+    cursor: pointer; }
+  a.close-reveal-modal {
+  	text-decoration: none; }
+
+dialog {
+  display: none; }
+  dialog::backdrop, dialog + .backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: auto;
+    display: none;
+    left: 0; }
+  dialog[open] {
+    display: block; }
+
+@media print {
+  dialog, .reveal-modal, dialog {
+    display: none;
+    background: white !important; } }
+	/*
+		
+	NOTES
+	
+	Close button entity is &#215;
+	
+	Example markup
+	
+	<div id="myModal" class="reveal-modal">
+		<h2>Awesome. I have it.</h2>
+		<p class="lead">Your couch.  I it's mine.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+	
+	*/
